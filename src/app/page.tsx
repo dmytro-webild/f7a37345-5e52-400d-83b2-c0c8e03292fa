@@ -106,7 +106,7 @@ export default function DiamondDentPage() {
       <div id="features" data-section="features">
         <FeatureCardOne
           title="Почему выбирают Diamond Dent"
-          description="Мы используем только сертифицированные материалы и передовое оборудование, гарантируя долговечный результат и абсолютный комфорт."
+          description="Мы используем только сертифицированные материалы и передовое оборудование, гарантируя долговечный результат и абсолютный комфорт"
           tag="Наши преимущества"
           tagIcon={Star}
           textboxLayout="default"
