@@ -35,7 +35,7 @@ export default function DiamondDentPage() {
             { name: "Контакты", id: "contact" }
           ]}
           button={{
-            text: "Записаться на прием",            href: "#contact"
+            text: "Записаться на прием",            href: "http://wa.me/+79291033003"
           }}
         />
       </div>
@@ -52,7 +52,7 @@ export default function DiamondDentPage() {
           imagePosition="right"
           buttons={[
             { text: "Наши услуги", href: "#services" },
-            { text: "Записаться", href: "#contact" }
+            { text: "Записаться", href: "http://wa.me/+79291033003" }
           ]}
           mediaAnimation="slide-up"
         />
@@ -83,7 +83,7 @@ export default function DiamondDentPage() {
             }
           ]}
           buttons={[
-            { text: "Записаться на консультацию", href: "#contact" }
+            { text: "Записаться на консультацию", href: "http://wa.me/+79291033003" }
           ]}
         />
       </div>
@@ -95,7 +95,7 @@ export default function DiamondDentPage() {
           ]}
           useInvertedBackground={false}
           buttons={[
-            { text: "Связаться с нами", href: "#contact" }
+            { text: "Связаться с нами", href: "http://wa.me/+79291033003" }
           ]}
         />
       </div>
@@ -156,6 +156,7 @@ export default function DiamondDentPage() {
           inputPlaceholder="Ваш номер телефона"
           buttonText="Записаться"
           termsText="Отправляя форму, вы соглашаетесь с нашей политикой конфиденциальности."
+          onSubmit={(email) => { window.location.href = 'http://wa.me/+79291033003'; }}
         />
       </div>
 
@@ -183,7 +184,7 @@ export default function DiamondDentPage() {
               title: "Соцсети",              items: [
                 { label: "Instagram", href: "#" },
                 { label: "Telegram", href: "#" },
-                { label: "WhatsApp", href: "#" },
+                { label: "WhatsApp", href: "http://wa.me/+79291033003" },
                 { label: "VK", href: "#" }
               ]
             }
