@@ -79,7 +79,7 @@ export default function DiamondDentPage() {
             },
             {
               id: "3",              brand: "Лечение",              name: "Цифровая диагностика",              price: "от 3,000₽",              rating: 5,
-              reviewCount: "200+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=njfrlp",              imageAlt: "Цифровой рентген и диагностика"
+              reviewCount: "200+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg",              imageAlt: "Цифровой рентген и диагностика"
             }
           ]}
           buttons={[
