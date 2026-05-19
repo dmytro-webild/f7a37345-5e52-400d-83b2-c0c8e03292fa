@@ -183,10 +183,7 @@ export default function DiamondDentPage() {
             },
             {
               title: "Соцсети",              items: [
-                { label: "Instagram", href: "#" },
-                { label: "Telegram", href: "#" },
-                { label: "WhatsApp", href: "http://wa.me/+79291033003" },
-                { label: "VK", href: "#" }
+                { label: "WhatsApp", href: "http://wa.me/+79291033003" }
               ]
             }
           ]}
