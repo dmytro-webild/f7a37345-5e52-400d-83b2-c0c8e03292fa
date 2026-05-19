@@ -61,6 +61,7 @@ export default function DiamondDentPage() {
             { text: "Записаться", href: "#contact" }
           ]}
           mediaAnimation="slide-up"
+          titleClassName="text-slate-400"
         />
       </div>
 
