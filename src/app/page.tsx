@@ -6,10 +6,11 @@ import HeroSplit from '@/components/sections/hero/HeroSplit';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
+import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles, Smile, Star, Mail } from 'lucide-react';
+import { Sparkles, Smile, Star, Mail, Users } from 'lucide-react';
 
 export default function DiamondDentPage() {
   return (
@@ -31,6 +32,7 @@ export default function DiamondDentPage() {
           navItems={[
             { name: "Главная", id: "hero" },
             { name: "Услуги", id: "services" },
+            { name: "Врачи", id: "doctors" },
             { name: "О нас", id: "about" },
             { name: "Контакты", id: "contact" }
           ]}
@@ -86,9 +88,25 @@ export default function DiamondDentPage() {
             { text: "Записаться на консультацию", href: "http://wa.me/+79291033003" }
           ]}
         />
-        <div className="text-center py-6">
-          <p className="text-lg font-medium">Наш адрес: Ул. Шейха Али Митаева, 59</p>
-        </div>
+      </div>
+
+      <div id="doctors" data-section="doctors">
+        <TeamCardTwo
+          title="Наши специалисты"
+          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки."
+          tag="Команда"
+          tagIcon={Users}
+          textboxLayout="default"
+          animationType="slide-up"
+          gridVariant="four-items-2x2-equal-grid"
+          useInvertedBackground={false}
+          members={[
+            { id: "1", name: "Д-р Алихан", role: "Главный врач", description: "Специалист по эстетической стоматологии и имплантации с опытом более 10 лет.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
+            { id: "2", name: "Д-р Фатима", role: "Терапевт", description: "Профессионал в области безболезненного лечения зубов и эндодонтии.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
+            { id: "3", name: "Д-р Муса", role: "Ортопед", description: "Специализируется на высокоточном протезировании и исправлении прикуса.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
+            { id: "4", name: "Д-р Зарема", role: "Детский стоматолог", description: "Мастер психологического подхода к маленьким пациентам.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" }
+          ]}
+        />
       </div>
 
       <div id="about" data-section="about">
@@ -177,6 +195,7 @@ export default function DiamondDentPage() {
             {
               title: "О клинике",              items: [
                 { label: "О нас", href: "#about" },
+                { label: "Врачи", href: "#doctors" },
                 { label: "Отзывы", href: "#testimonials" },
                 { label: "Контакты", href: "#contact" }
               ]
