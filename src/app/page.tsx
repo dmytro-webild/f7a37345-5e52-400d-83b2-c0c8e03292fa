@@ -75,7 +75,7 @@ export default function DiamondDentPage() {
             },
             {
               id: "2",              brand: "Хирургия",              name: "Дентальная имплантация",              price: "от 25,000₽",              rating: 5,
-              reviewCount: "85+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=ied1qp",              imageAlt: "Имплантация под ключ"
+              reviewCount: "85+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg",              imageAlt: "Имплантация под ключ"
             },
             {
               id: "3",              brand: "Лечение",              name: "Цифровая диагностика",              price: "от 3,000₽",              rating: 5,
