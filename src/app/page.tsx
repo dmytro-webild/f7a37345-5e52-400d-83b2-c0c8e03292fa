@@ -112,9 +112,7 @@ export default function DiamondDentPage() {
           useInvertedBackground={true}
           features={[
             {
-              title: "Цифровое планирование",              description: "Моделирование вашей будущей улыбки до начала лечения с помощью компьютерных технологий.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779214792802-z6xibcad.jpg"},
-            {
-              title: "Команда экспертов",              description: "Ведущие стоматологи города, регулярно повышающие квалификацию в лучших академиях страны.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=pbserj"}
+              title: "Цифровое планирование",              description: "Моделирование вашей будущей улыбки до начала лечения с помощью компьютерных технологий.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779214792802-z6xibcad.jpg"}
           ]}
         />
       </div>
