@@ -7,7 +7,6 @@ import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import TeamCardFive from '@/components/sections/team/TeamCardFive';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Sparkles, Smile, Star, Mail } from 'lucide-react';
@@ -33,7 +32,6 @@ export default function DiamondDentPage() {
             { name: "Главная", id: "hero" },
             { name: "Услуги", id: "services" },
             { name: "О нас", id: "about" },
-            { name: "Команда", id: "team" },
             { name: "Контакты", id: "contact" }
           ]}
           button={{
@@ -72,7 +70,7 @@ export default function DiamondDentPage() {
           useInvertedBackground={true}
           products={[
             {
-              id: "1",              brand: "Эстетика",              name: "Виниры и реставрация",              price: "от 15,000₽",              rating: 5,
+              id: "1",              brand: "Эстетика",              name: "Виниры и реставрация",              price: "от 50000₽",              rating: 5,
               reviewCount: "120+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg",              imageAlt: "Художественная реставрация зубов"
             },
             {
@@ -97,24 +95,7 @@ export default function DiamondDentPage() {
           ]}
           useInvertedBackground={false}
           buttons={[
-            { text: "Наша команда", href: "#team" },
             { text: "Связаться с нами", href: "#contact" }
-          ]}
-        />
-      </div>
-
-      <div id="team" data-section="team">
-        <TeamCardFive
-          title="Наши ведущие специалисты"
-          description="Команда профессионалов Diamond Dent, преданных своему делу и здоровью ваших зубов."
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={true}
-          team={[
-            { id: "1", name: "Яндарханов ", role: "Терапевт", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-tkdm63qw.jpg" },
-            { id: "2", name: "Хузаева ", role: "Ортодонт ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-k83bvzu7.jpg" },
-            { id: "3", name: "Межаев ", role: "Врач-стоматолог ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-7yg4l6ln.jpg" },
-            { id: "4", name: "Ибрагимова ", role: "Микроскопист", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-d9myrbqa.jpg" }
           ]}
         />
       </div>
@@ -195,7 +176,6 @@ export default function DiamondDentPage() {
               title: "О клинике",              items: [
                 { label: "О нас", href: "#about" },
                 { label: "Отзывы", href: "#testimonials" },
-                { label: "Наша команда", href: "#team" },
                 { label: "Контакты", href: "#contact" }
               ]
             },
