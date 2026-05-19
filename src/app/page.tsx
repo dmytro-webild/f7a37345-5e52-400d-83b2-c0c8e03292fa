@@ -52,8 +52,8 @@ export default function DiamondDentPage() {
           imagePosition="right"
           kpis={[
             { value: "10+ лет", label: "Успешной работы" },
-            { value: "15,000+", label: "Счастливых улыбок" },
-            { value: "100%", label: "Комфортное лечение" }
+            { value: "100%", label: "Комфортное лечение" },
+            { value: "15,000+", label: "Счастливых улыбок" }
           ]}
           enableKpiAnimation={true}
           buttons={[
