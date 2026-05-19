@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
+import HeroSplit from '@/components/sections/hero/HeroSplit';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
@@ -41,7 +41,7 @@ export default function DiamondDentPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroSplitKpi
+        <HeroSplit
           title="Diamond Dent — Стоматология высоких стандартов в Грозном"
           description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок."
           tag="Стоматология премиум-класса"
@@ -50,12 +50,6 @@ export default function DiamondDentPage() {
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779208184969-49n41xud.jpg"
           imageAlt="Современная стоматологическая клиника в Грозном"
           imagePosition="right"
-          kpis={[
-            { value: "10+ лет", label: "Успешной работы" },
-            { value: "15,000+", label: "Счастливых улыбок" },
-            { value: "100%", label: "Комфортное лечение" }
-          ]}
-          enableKpiAnimation={true}
           buttons={[
             { text: "Наши услуги", href: "#services" },
             { text: "Записаться", href: "#contact" }
