@@ -183,7 +183,8 @@ export default function DiamondDentPage() {
             },
             {
               title: "Соцсети",              items: [
-                { label: "WhatsApp", href: "http://wa.me/+79291033003" }
+                { label: "WhatsApp", href: "http://wa.me/+79291033003" },
+                { label: "Instagram", href: "https://www.instagram.com/diamond_dent_grozny?igsh=MW9scTNkcndjMnR6" }
               ]
             }
           ]}
