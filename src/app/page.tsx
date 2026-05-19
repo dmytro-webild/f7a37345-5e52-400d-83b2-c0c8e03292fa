@@ -101,7 +101,7 @@ export default function DiamondDentPage() {
           gridVariant="four-items-2x2-equal-grid"
           useInvertedBackground={false}
           members={[
-            { id: "1", name: "Д-р Алихан", role: "Главный врач", description: "Специалист по эстетической стоматологии и имплантации с опытом более 10 лет.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
+            { id: "1", name: "Яндарханов ", role: "Главный врач", description: "Специалист по эстетической стоматологии и имплантации с опытом более 10 лет.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
             { id: "2", name: "Д-р Фатима", role: "Терапевт", description: "Профессионал в области безболезненного лечения зубов и эндодонтии.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
             { id: "3", name: "Д-р Муса", role: "Ортопед", description: "Специализируется на высокоточном протезировании и исправлении прикуса.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
             { id: "4", name: "Д-р Зарема", role: "Детский стоматолог", description: "Мастер психологического подхода к маленьким пациентам.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" }
