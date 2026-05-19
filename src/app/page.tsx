@@ -86,6 +86,9 @@ export default function DiamondDentPage() {
             { text: "Записаться на консультацию", href: "http://wa.me/+79291033003" }
           ]}
         />
+        <div className="text-center py-6">
+          <p className="text-lg font-medium">Наш адрес: Ул. Шейха Али Митаева, 59</p>
+        </div>
       </div>
 
       <div id="about" data-section="about">
