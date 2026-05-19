@@ -71,7 +71,7 @@ export default function DiamondDentPage() {
           products={[
             {
               id: "1",              brand: "Эстетика",              name: "Виниры и реставрация",              price: "от 15,000₽",              rating: 5,
-              reviewCount: "120+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=n5frh0",              imageAlt: "Художественная реставрация зубов"
+              reviewCount: "120+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg",              imageAlt: "Художественная реставрация зубов"
             },
             {
               id: "2",              brand: "Хирургия",              name: "Дентальная имплантация",              price: "от 25,000₽",              rating: 5,
