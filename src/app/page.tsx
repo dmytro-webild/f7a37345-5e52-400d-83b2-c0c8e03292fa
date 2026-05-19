@@ -111,10 +111,10 @@ export default function DiamondDentPage() {
           textboxLayout="default"
           useInvertedBackground={true}
           team={[
-            { id: "1", name: "Доктор 1", role: "Стоматолог-ортопед", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-tkdm63qw.jpg" },
-            { id: "2", name: "Доктор 2", role: "Имплантолог-хирург", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-k83bvzu7.jpg" },
-            { id: "3", name: "Доктор 3", role: "Стоматолог-терапевт", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-7yg4l6ln.jpg" },
-            { id: "4", name: "Доктор 4", role: "Детский стоматолог", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-d9myrbqa.jpg" }
+            { id: "1", name: "Яндарханов ", role: "Терапевт", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-tkdm63qw.jpg" },
+            { id: "2", name: "Хузаева ", role: "Ортодонт ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-k83bvzu7.jpg" },
+            { id: "3", name: "Межаев ", role: "Врач-стоматолог ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-7yg4l6ln.jpg" },
+            { id: "4", name: "Ибрагимова ", role: "Микроскопист", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779212264589-d9myrbqa.jpg" }
           ]}
         />
       </div>
