@@ -106,7 +106,7 @@ export default function DiamondDentPage() {
             { id: "3", name: "Д-р Муса", role: "Ортопед", description: "Специализируется на высокоточном протезировании и исправлении прикуса.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
             { id: "4", name: "Д-р Зарема", role: "Детский стоматолог", description: "Мастер психологического подхода к маленьким пациентам.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" },
             { id: "5", name: "Д-р Ахмед", role: "Хирург", description: "Специалист по сложным удалениям и костной пластике.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-zlsd3f6d.jpg" },
-            { id: "6", name: "Д-р Лейла", role: "Ортодонт", description: "Исправление прикуса современными системами брекетов и элайнерами.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-85eg6mq1.jpg" },
+            { id: "6", name: "Ибиев Хасан ", role: "", description: "Стоматолог - терапевт/эндодонтист ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-85eg6mq1.jpg" },
             { id: "7", name: "Ибрагимова Марет ", role: "", description: "Врач-стоматолог", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-46soe5n4.jpg" }
           ]}
         />
