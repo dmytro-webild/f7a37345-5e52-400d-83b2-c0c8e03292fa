@@ -127,7 +127,7 @@ export default function DiamondDentPage() {
       <div id="features" data-section="features">
         <FeatureCardOne
           title="Почему выбирают Diamond Dent"
-          description="Мы используем только сертифицированные материалы и передовое оборудование. Наш адрес: <strong>Ул. Шейха Али Митаева, 59</strong>"
+          description="Мы используем только сертифицированные материалы и передовое оборудование. Наш адрес: Ул. Шейха Али Митаева, 59"
           tag="Наши преимущества"
           tagIcon={Star}
           textboxLayout="default"
