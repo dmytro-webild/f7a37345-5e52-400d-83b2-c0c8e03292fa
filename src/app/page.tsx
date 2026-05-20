@@ -45,7 +45,7 @@ export default function DiamondDentPage() {
       <div id="hero" data-section="hero">
         <HeroSplit
           title="Diamond Dent — Стоматология высоких стандартов в Грозном"
-          description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок. Адрес: Ул. Шейха Али Митева, 59."
+          description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок. Адрес: <strong>Ул. Шейха Али Митаева, 59</strong>."
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
@@ -63,7 +63,7 @@ export default function DiamondDentPage() {
       <div id="services" data-section="services">
         <ProductCardTwo
           title="Наши услуги"
-          description="Комплексный подход к здоровью полости рта: от гигиены и лечения до сложной имплантации и художественной реставрации зубов."
+          description="Комплексный подход к здоровью полости рта: от гигиены и лечения до сложной имплантации и художественной реставрации зубов. Адрес: <strong>Ул. Шейха Али Митаева, 59</strong>."
           tag="Сервис"
           tagIcon={Smile}
           textboxLayout="default"
@@ -93,7 +93,7 @@ export default function DiamondDentPage() {
       <div id="doctors" data-section="doctors">
         <TeamCardTwo
           title="Наши специалисты"
-          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки."
+          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки. Принимаем по адресу: <strong>Ул. Шейха Али Митаева, 59</strong>."
           tag="Команда"
           tagIcon={Users}
           textboxLayout="default"
@@ -115,7 +115,7 @@ export default function DiamondDentPage() {
       <div id="about" data-section="about">
         <InlineImageSplitTextAbout
           heading={[
-            { type: "text", content: "Diamond Dent: Совершенство в каждом движении врача" }
+            { type: "text", content: "Diamond Dent: Совершенство в каждом движении врача по адресу Ул. Шейха Али Митаева, 59" }
           ]}
           useInvertedBackground={false}
           buttons={[
@@ -127,7 +127,7 @@ export default function DiamondDentPage() {
       <div id="features" data-section="features">
         <FeatureCardOne
           title="Почему выбирают Diamond Dent"
-          description="Мы используем только сертифицированные материалы и передовое оборудование, гарантируя долговечный результат и абсолютный комфорт"
+          description="Мы используем только сертифицированные материалы и передовое оборудование. Наш адрес: <strong>Ул. Шейха Али Митаева, 59</strong>"
           tag="Наши преимущества"
           tagIcon={Star}
           textboxLayout="default"
@@ -144,7 +144,7 @@ export default function DiamondDentPage() {
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardSix
           title="Отзывы наших пациентов"
-          description="Узнайте, почему пациенты доверяют нам самое ценное — свою улыбку."
+          description="Узнайте, почему пациенты, посещающие нас на Ул. Шейха Али Митаева, 59, доверяют нам самое ценное — свою улыбку."
           tag="Доверие"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -168,7 +168,7 @@ export default function DiamondDentPage() {
           tag="Запись на прием"
           tagIcon={Mail}
           title="Станьте обладателем безупречной улыбки"
-          description="Оставьте ваши данные, и наш администратор свяжется с вами для выбора удобного времени визита в Diamond Dent."
+          description="Оставьте ваши данные, и наш администратор свяжется с вами для выбора удобного времени визита в Diamond Dent по адресу Ул. Шейха Али Митаева, 59."
           background={{ variant: "plain" }}
           useInvertedBackground={true}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=9oxweb"
@@ -185,7 +185,7 @@ export default function DiamondDentPage() {
       <div id="footer" data-section="footer">
         <FooterBase
           logoText="Diamond Dent"
-          copyrightText="© 2025 Diamond Dent Грозный. Все права защищены."
+          copyrightText="© 2025 Diamond Dent, Ул. Шейха Али Митаева, 59. Все права защищены."
           columns={[
             {
               title: "Услуги",              items: [
