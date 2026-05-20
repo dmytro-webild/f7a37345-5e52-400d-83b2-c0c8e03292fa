@@ -93,7 +93,7 @@ export default function DiamondDentPage() {
       <div id="doctors" data-section="doctors">
         <TeamCardTwo
           title="Наши специалисты"
-          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки. Принимаем по адресу: <strong>Ул. Шейха Али Митаева, 59</strong>."
+          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки. Принимаем по адресу: Ул. Шейха Али Митаева, 59"
           tag="Команда"
           tagIcon={Users}
           textboxLayout="default"
