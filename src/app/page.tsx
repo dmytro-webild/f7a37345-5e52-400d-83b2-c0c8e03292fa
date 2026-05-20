@@ -101,7 +101,7 @@ export default function DiamondDentPage() {
           gridVariant="four-items-2x2-equal-grid"
           useInvertedBackground={false}
           members={[
-            { id: "1", name: "Яндарханов", role: "Главный врач", description: "Специалист по эстетической стоматологии и имплантации с опытом более 10 лет.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
+            { id: "1", name: "Яндарханов Малик", role: "", description: "Стоматолог - терапевт ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
             { id: "2", name: "Хузаева Селима ", role: "", description: "Стоматолог - ортодонт", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
             { id: "3", name: "Межаев  Саид-Селим", role: "", description: "Врач-стоматолог общей практики ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
             { id: "4", name: "Ибрагимова Луиза ", role: "", description: "Стоматолог - микроскопист ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" },
