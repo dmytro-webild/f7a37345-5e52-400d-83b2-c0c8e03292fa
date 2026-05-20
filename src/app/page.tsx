@@ -63,7 +63,7 @@ export default function DiamondDentPage() {
       <div id="services" data-section="services">
         <ProductCardTwo
           title="Наши услуги"
-          description="Комплексный подход к здоровью полости рта: от гигиены и лечения до сложной имплантации и художественной реставрации зубов. Адрес: <strong>Ул. Шейха Али Митаева, 59</strong>."
+          description="Комплексный подход к здоровью полости рта: от гигиены и лечения до сложной имплантации и художественной реставрации зубов. Адрес: Ул. Шейха Али Митаева, 59"
           tag="Сервис"
           tagIcon={Smile}
           textboxLayout="default"
