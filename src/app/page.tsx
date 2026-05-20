@@ -171,7 +171,7 @@ export default function DiamondDentPage() {
           description="Оставьте ваши данные, и наш администратор свяжется с вами для выбора удобного времени визита в Diamond Dent по адресу Ул. Шейха Али Митаева, 59."
           background={{ variant: "plain" }}
           useInvertedBackground={true}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=9oxweb"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg"
           imageAlt="Приемная Diamond Dent"
           mediaPosition="right"
           mediaAnimation="slide-up"
