@@ -48,7 +48,7 @@ export default function DiamondDentPage() {
           description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте. Адрес: Ул. Шейха Али Митаева, 59"
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
-          background={{ variant: "glowing-orb" }}
+          background={{ variant: "downward-rays-animated" }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779347445955-xba4vklv.jpg"
           imageAlt="Современная стоматологическая клиника в Грозном"
           buttons={[
