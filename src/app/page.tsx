@@ -10,7 +10,7 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles, Smile, Star, Mail, Users, Camera, Heart } from 'lucide-react';
+import { Sparkles, Smile, Camera, Users, LayoutGrid, Stethoscope, Mail } from 'lucide-react';
 
 export default function DiamondDentPage() {
   return (
@@ -21,12 +21,12 @@ export default function DiamondDentPage() {
       contentWidth="smallMedium"
       sizing="mediumLargeSizeMediumTitles"
       background="aurora"
-      cardStyle="layered-gradient"
+      cardStyle="glass-elevated"
       primaryButtonStyle="primary-glow"
       secondaryButtonStyle="solid"
-      headingFontWeight="light"
+      headingFontWeight="semibold"
     >
-      <div id="nav" data-section="nav" className="py-4">
+      <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           brandName="Diamond Dent Грозный"
           navItems={[
@@ -36,21 +36,18 @@ export default function DiamondDentPage() {
             { name: "О нас", id: "about" },
             { name: "Контакты", id: "contact" }
           ]}
-          button={{
-            text: "Записаться",            href: "http://wa.me/+79291033003"
-          }}
+          button={{ text: "Записаться", href: "http://wa.me/+79291033003" }}
         />
       </div>
 
-      <div id="hero" data-section="hero" className="py-8 md:py-16">
+      <div id="hero" data-section="hero">
         <HeroSplit
-          title="Diamond Dent — Стоматология высоких стандартов в Грозном"
-          description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок."
+          title="Стоматология высоких стандартов"
+          description="Искусство создания идеальных улыбок с помощью передовых технологий и индивидуального подхода в центре Грозного."
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779347445955-xba4vklv.jpg"
-          imageAlt="Современная стоматологическая клиника в Грозном"
           buttons={[
             { text: "Наши услуги", href: "#services" },
             { text: "Записаться", href: "http://wa.me/+79291033003" }
@@ -58,98 +55,110 @@ export default function DiamondDentPage() {
         />
       </div>
 
-      <div id="services" data-section="services" className="py-12 md:py-20">
+      <div id="services" data-section="services">
         <ProductCardTwo
           title="Наши услуги"
-          description="Комплексный подход к здоровью полости рта: от гигиены до сложной имплантации."
+          description="Широкий спектр профессиональной стоматологической помощи."
           tag="Сервис"
           tagIcon={Smile}
-          textboxLayout="default"
           animationType="slide-up"
           gridVariant="three-columns-all-equal-width"
-          useInvertedBackground={true}
-          products={[
-            { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg?_wi=1" },
-            { id: "2", brand: "Хирургия", name: "Дентальная имплантация", price: "от 25,000₽", rating: 5, reviewCount: "85+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg" },
-            { id: "3", brand: "Лечение", name: "Цифровая диагностика", price: "от 3,000₽", rating: 5, reviewCount: "200+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg" }
-          ]}
-        />
-      </div>
-
-      <div id="doctors" data-section="doctors" className="py-12 md:py-20">
-        <TeamCardTwo
-          title="Наши специалисты"
-          description="Команда высококвалифицированных врачей, преданных здоровью вашей улыбки."
-          tag="Команда"
-          tagIcon={Users}
           textboxLayout="default"
-          animationType="slide-up"
-          gridVariant="four-items-2x2-equal-grid"
           useInvertedBackground={false}
-          members={[
-            { id: "1", name: "Яндарханов Малик", role: "Стоматолог-терапевт", description: "Специалист с 10-летним стажем", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
-            { id: "2", name: "Хузаева Селима", role: "Стоматолог-ортодонт", description: "Мастер идеальных улыбок", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
-            { id: "3", name: "Межаев Саид-Селим", role: "Врач общей практики", description: "Эксперт в комплексном лечении", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
-            { id: "4", name: "Ибрагимова Луиза", role: "Стоматолог-микроскопист", description: "Лечение под увеличением", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" }
+          products={[
+            { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" },
+            { id: "2", brand: "Хирургия", name: "Дентальная имплантация", price: "от 25000₽", rating: 5, reviewCount: "85+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg" },
+            { id: "3", brand: "Лечение", name: "Цифровая диагностика", price: "от 3000₽", rating: 5, reviewCount: "200+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg" }
           ]}
         />
       </div>
 
-      <div id="cases" data-section="cases" className="py-12 md:py-20">
-        <FeatureCardOne 
-          title="Наши работы"
-          description="Результаты, которыми мы гордимся. До и после профессионального лечения."
+      <div id="cases" data-section="cases">
+        <FeatureCardOne
+          title="До / После"
+          description="Результаты, которыми мы гордимся."
           tag="Кейсы"
-          tagIcon={Heart}
-          animationType="slide-up"
-          gridVariant="two-items-per-row"
-          features={[{ title: "Реставрация", description: "Безупречный результат", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg?_wi=2" }]}
-          textboxLayout="default"
-          useInvertedBackground={true}
-        />
-      </div>
-
-      <div id="interior" data-section="interior" className="py-12 md:py-20">
-        <FeatureCardOne 
-          title="Наша клиника"
-          description="Создали пространство, где комфорт сочетается с передовым оборудованием."
-          tag="Интерьер"
           tagIcon={Camera}
           animationType="slide-up"
-          gridVariant="two-items-per-row"
-          features={[{ title: "Зона ожидания", description: "Комфорт с первых минут", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg" }]}
+          gridVariant="uniform-all-items-equal"
           textboxLayout="default"
           useInvertedBackground={false}
+          features={[]}
         />
       </div>
 
-      <div id="about" data-section="about" className="py-12 md:py-20">
+      <div id="doctors" data-section="doctors">
+        <TeamCardTwo
+          title="Наши специалисты"
+          description="Команда профессионалов, преданных вашему здоровью."
+          tag="Команда"
+          tagIcon={Users}
+          animationType="slide-up"
+          gridVariant="four-items-2x2-equal-grid"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          members={[
+            { id: "1", name: "Яндарханов Малик", role: "Стоматолог-терапевт", description: "Специалист по художественной реставрации", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
+            { id: "2", name: "Хузаева Селима", role: "Стоматолог-ортодонт", description: "Эксперт в выравнивании зубного ряда", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" }
+          ]}
+        />
+      </div>
+
+      <div id="about" data-section="about">
         <InlineImageSplitTextAbout
-          heading={[{ type: "text", content: "Diamond Dent: Совершенство в каждом движении врача" }]}
+          heading={[{ type: "text", content: "Совершенство в каждом движении" }]}
           useInvertedBackground={false}
         />
       </div>
 
-      <div id="testimonials" data-section="testimonials" className="py-12 md:py-20">
+      <div id="interior" data-section="interior">
+        <FeatureCardOne
+          title="Наша клиника"
+          description="Комфортное пространство для вашего спокойствия."
+          tag="Интерьер"
+          tagIcon={LayoutGrid}
+          animationType="slide-up"
+          gridVariant="three-columns-all-equal-width"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          features={[]}
+        />
+      </div>
+
+      <div id="equipment" data-section="equipment">
+        <FeatureCardOne
+          title="Технологическое оснащение"
+          description="Современное оборудование для точной диагностики и лечения."
+          tag="Оборудование"
+          tagIcon={Stethoscope}
+          animationType="slide-up"
+          gridVariant="three-columns-all-equal-width"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          features={[]}
+        />
+      </div>
+
+      <div id="testimonials" data-section="testimonials">
         <TestimonialCardSix
-          title="Отзывы наших пациентов"
-          description="Почему нас выбирают снова и рекомендуют близким."
+          title="Отзывы пациентов"
+          description="Мнение наших пациентов — лучшее доказательство качества."
+          tag="Доверие"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
           testimonials={[
-            { id: "1", name: "Амина И.", handle: "Пациент", testimonial: "Лучшая клиника в Грозном, очень внимательные доктора!" },
-            { id: "2", name: "Магомед А.", handle: "Пациент", testimonial: "Имплантация прошла идеально, цены прозрачные." },
-            { id: "3", name: "Седа М.", handle: "Пациент", testimonial: "Детский стоматолог — просто чудо, дети не боятся." }
+            { id: "1", name: "Амина И.", handle: "Пациент", testimonial: "Очень внимательные доктора, безболезненно установили виниры." }
           ]}
         />
       </div>
 
-      <div id="contact" data-section="contact" className="py-12 md:py-20">
+      <div id="contact" data-section="contact">
         <ContactSplit
-          tag="Запись на прием"
-          title="Станьте обладателем безупречной улыбки"
-          description="Оставьте данные для связи с нашим администратором."
+          tag="Контакты"
+          tagIcon={Mail}
+          title="Запишитесь на прием"
+          description="Оставьте данные и мы свяжемся с вами в ближайшее время."
           background={{ variant: "plain" }}
           useInvertedBackground={false}
         />
@@ -159,9 +168,8 @@ export default function DiamondDentPage() {
         <FooterBase
           logoText="Diamond Dent"
           columns={[
-            { title: "Услуги", items: [{ label: "Реставрация", href: "#services" }, { label: "Имплантация", href: "#services" }] },
-            { title: "Навигация", items: [{ label: "Врачи", href: "#doctors" }, { label: "Отзывы", href: "#testimonials" }] },
-            { title: "Контакты", items: [{ label: "WhatsApp", href: "http://wa.me/+79291033003" }] }
+            { title: "Услуги", items: [{ label: "Все услуги", href: "#services" }] },
+            { title: "Компания", items: [{ label: "Контакты", href: "#contact" }] }
           ]}
         />
       </div>
