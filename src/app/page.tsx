@@ -160,6 +160,9 @@ export default function DiamondDentPage() {
               id: "3",              name: "Седа М.",              handle: "Пациент",              testimonial: "Лечила зубы детям. Врач нашел подход, дети даже не испугались. Рекомендую Diamond Dent всей семьей.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=wkqmwe"
             }
           ]}
+          buttons={[
+             { text: "Врачи", onClick: () => document.getElementById('doctors')?.scrollIntoView({ behavior: 'smooth' }) }
+          ]}
         />
       </div>
 
