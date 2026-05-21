@@ -45,7 +45,8 @@ export default function DiamondDentPage() {
       <div id="hero" data-section="hero">
         <HeroSplit
           title="DIAMOND DENT: СОВЕРШЕНСТВО ВАШЕЙ УЛЫБКИ"
-          description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте.\n\nАдрес: Ул. Шейха Али Митаева, 59"
+          description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте 
+Адрес: Ул. Шейха Али Митаева, 59"
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
