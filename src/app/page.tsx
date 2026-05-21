@@ -53,7 +53,7 @@ export default function DiamondDentPage() {
           imageAlt="Современная стоматологическая клиника в Грозном"
           imagePosition="right"
           buttons={[
-            { text: "Наши услуги", onClick: () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }) },
+            { text: "Наши услуги", href: "#services" },
             { text: "Записаться", href: "http://wa.me/+79291033003" }
           ]}
           mediaAnimation="slide-up"
