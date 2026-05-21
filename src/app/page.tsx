@@ -10,7 +10,7 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles, Smile, Star, Mail, Users, Camera, LayoutGrid, Stethoscope } from 'lucide-react';
+import { Sparkles, Smile, Camera, Users, LayoutGrid, Stethoscope, Mail } from 'lucide-react';
 
 export default function DiamondDentPage() {
   return (
@@ -36,9 +36,7 @@ export default function DiamondDentPage() {
             { name: "О нас", id: "about" },
             { name: "Контакты", id: "contact" }
           ]}
-          button={{
-            text: "Записаться", href: "http://wa.me/+79291033003"
-          }}
+          button={{ text: "Записаться", href: "http://wa.me/+79291033003" }}
         />
       </div>
 
@@ -66,6 +64,7 @@ export default function DiamondDentPage() {
           animationType="slide-up"
           gridVariant="three-columns-all-equal-width"
           textboxLayout="default"
+          useInvertedBackground={false}
           products={[
             { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" },
             { id: "2", brand: "Хирургия", name: "Дентальная имплантация", price: "от 25000₽", rating: 5, reviewCount: "85+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg" },
@@ -82,6 +81,8 @@ export default function DiamondDentPage() {
           tagIcon={Camera}
           animationType="slide-up"
           gridVariant="uniform-all-items-equal"
+          textboxLayout="default"
+          useInvertedBackground={false}
           features={[]}
         />
       </div>
@@ -94,6 +95,8 @@ export default function DiamondDentPage() {
           tagIcon={Users}
           animationType="slide-up"
           gridVariant="four-items-2x2-equal-grid"
+          textboxLayout="default"
+          useInvertedBackground={false}
           members={[
             { id: "1", name: "Яндарханов Малик", role: "Стоматолог-терапевт", description: "Специалист по художественной реставрации", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
             { id: "2", name: "Хузаева Селима", role: "Стоматолог-ортодонт", description: "Эксперт в выравнивании зубного ряда", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" }
@@ -104,6 +107,7 @@ export default function DiamondDentPage() {
       <div id="about" data-section="about">
         <InlineImageSplitTextAbout
           heading={[{ type: "text", content: "Совершенство в каждом движении" }]}
+          useInvertedBackground={false}
         />
       </div>
 
@@ -115,6 +119,8 @@ export default function DiamondDentPage() {
           tagIcon={LayoutGrid}
           animationType="slide-up"
           gridVariant="three-columns-all-equal-width"
+          textboxLayout="default"
+          useInvertedBackground={false}
           features={[]}
         />
       </div>
@@ -127,6 +133,8 @@ export default function DiamondDentPage() {
           tagIcon={Stethoscope}
           animationType="slide-up"
           gridVariant="three-columns-all-equal-width"
+          textboxLayout="default"
+          useInvertedBackground={false}
           features={[]}
         />
       </div>
@@ -137,6 +145,8 @@ export default function DiamondDentPage() {
           description="Мнение наших пациентов — лучшее доказательство качества."
           tag="Доверие"
           animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
           testimonials={[
             { id: "1", name: "Амина И.", handle: "Пациент", testimonial: "Очень внимательные доктора, безболезненно установили виниры." }
           ]}
@@ -150,6 +160,7 @@ export default function DiamondDentPage() {
           title="Запишитесь на прием"
           description="Оставьте данные и мы свяжемся с вами в ближайшее время."
           background={{ variant: "plain" }}
+          useInvertedBackground={false}
         />
       </div>
 
