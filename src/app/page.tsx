@@ -24,7 +24,7 @@ export default function DiamondDentPage() {
       cardStyle="layered-gradient"
       primaryButtonStyle="primary-glow"
       secondaryButtonStyle="solid"
-      headingFontWeight="light"
+      headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
@@ -44,10 +44,8 @@ export default function DiamondDentPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplit
-          title="Diamond Dent: Ваша идеальная улыбка начинается здесь"
-          description="В Diamond Dent мы сочетаем передовые цифровые технологии с заботливым подходом к каждому пациенту. Ваша здоровая улыбка — наш главный приоритет.
-
-Адрес: Ул. Шейха Али Митаева, 59"
+          title="DIAMOND DENT: СОВЕРШЕНСТВО ВАШЕЙ УЛЫБКИ"
+          description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте.\n\nАдрес: Ул. Шейха Али Митаева, 59"
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
