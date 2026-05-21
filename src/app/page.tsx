@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import HeroSplit from '@/components/sections/hero/HeroSplit';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
@@ -43,21 +43,18 @@ export default function DiamondDentPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroSplit
+        <HeroBillboardScroll
           title="DIAMOND DENT: СОВЕРШЕНСТВО ВАШЕЙ УЛЫБКИ"
-          description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте 
-Адрес: Ул. Шейха Али Митаева, 59"
+          description="Передовые технологии цифровой стоматологии в сочетании с экспертной заботой о каждом пациенте. Адрес: Ул. Шейха Али Митаева, 59"
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779347445955-xba4vklv.jpg"
           imageAlt="Современная стоматологическая клиника в Грозном"
-          imagePosition="right"
           buttons={[
             { text: "Наши услуги", href: "#services" },
             { text: "Записаться", href: "http://wa.me/+79291033003" }
           ]}
-          mediaAnimation="slide-up"
         />
       </div>
 
