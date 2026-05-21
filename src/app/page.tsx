@@ -10,7 +10,7 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles, Smile, Star, Mail, Users } from 'lucide-react';
+import { Sparkles, Smile, Star, Mail, Users, Camera, Heart } from 'lucide-react';
 
 export default function DiamondDentPage() {
   return (
@@ -26,7 +26,7 @@ export default function DiamondDentPage() {
       secondaryButtonStyle="solid"
       headingFontWeight="light"
     >
-      <div id="nav" data-section="nav">
+      <div id="nav" data-section="nav" className="py-4">
         <NavbarLayoutFloatingInline
           brandName="Diamond Dent Грозный"
           navItems={[
@@ -37,33 +37,31 @@ export default function DiamondDentPage() {
             { name: "Контакты", id: "contact" }
           ]}
           button={{
-            text: "Записаться на прием",            href: "http://wa.me/+79291033003"
+            text: "Записаться",            href: "http://wa.me/+79291033003"
           }}
         />
       </div>
 
-      <div id="hero" data-section="hero">
+      <div id="hero" data-section="hero" className="py-8 md:py-16">
         <HeroSplit
           title="Diamond Dent — Стоматология высоких стандартов в Грозном"
-          description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок. Адрес: Ул. Шейха Али Митаева"
+          description="Мы превращаем визиты к стоматологу в комфортный опыт, сочетая передовые цифровые технологии, безболезненные методы и эстетическое искусство создания безупречных улыбок."
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779347445955-xba4vklv.jpg"
           imageAlt="Современная стоматологическая клиника в Грозном"
-          imagePosition="right"
           buttons={[
-            { text: "Наши услуги", onClick: () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }) },
+            { text: "Наши услуги", href: "#services" },
             { text: "Записаться", href: "http://wa.me/+79291033003" }
           ]}
-          mediaAnimation="slide-up"
         />
       </div>
 
-      <div id="services" data-section="services">
+      <div id="services" data-section="services" className="py-12 md:py-20">
         <ProductCardTwo
           title="Наши услуги"
-          description="Комплексный подход к здоровью полости рта: от гигиены и лечения до сложной имплантации и художественной реставрации зубов. Адрес: Ул. Шейха Али Митаева, 59"
+          description="Комплексный подход к здоровью полости рта: от гигиены до сложной имплантации."
           tag="Сервис"
           tagIcon={Smile}
           textboxLayout="default"
@@ -71,147 +69,92 @@ export default function DiamondDentPage() {
           gridVariant="three-columns-all-equal-width"
           useInvertedBackground={true}
           products={[
-            {
-              id: "1",              brand: "Эстетика",              name: "Виниры и реставрация",              price: "от 50000₽",              rating: 5,
-              reviewCount: "120+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg",              imageAlt: "Художественная реставрация зубов"
-            },
-            {
-              id: "2",              brand: "Хирургия",              name: "Дентальная имплантация",              price: "от 25,000₽",              rating: 5,
-              reviewCount: "85+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg",              imageAlt: "Имплантация под ключ"
-            },
-            {
-              id: "3",              brand: "Лечение",              name: "Цифровая диагностика",              price: "от 3,000₽",              rating: 5,
-              reviewCount: "200+",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg",              imageAlt: "Цифровой рентген и диагностика"
-            }
-          ]}
-          buttons={[
-            { text: "Записаться на консультацию", href: "http://wa.me/+79291033003" }
+            { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" },
+            { id: "2", brand: "Хирургия", name: "Дентальная имплантация", price: "от 25,000₽", rating: 5, reviewCount: "85+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg" },
+            { id: "3", brand: "Лечение", name: "Цифровая диагностика", price: "от 3,000₽", rating: 5, reviewCount: "200+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg" }
           ]}
         />
       </div>
 
-      <div id="doctors" data-section="doctors">
+      <div id="doctors" data-section="doctors" className="py-12 md:py-20">
         <TeamCardTwo
           title="Наши специалисты"
-          description="Команда высококвалифицированных врачей, преданных здоровью и красоте вашей улыбки. Принимаем по адресу: Ул. Шейха Али Митаева, 59"
+          description="Команда высококвалифицированных врачей, преданных здоровью вашей улыбки."
           tag="Команда"
           tagIcon={Users}
           textboxLayout="default"
           animationType="slide-up"
           gridVariant="four-items-2x2-equal-grid"
-          useInvertedBackground={false}
           members={[
-            { id: "1", name: "Яндарханов Малик", role: "", description: "Стоматолог - терапевт ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
-            { id: "2", name: "Хузаева Селима ", role: "", description: "Стоматолог - ортодонт", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
-            { id: "3", name: "Межаев  Саид-Селим", role: "", description: "Врач-стоматолог общей практики ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
-            { id: "4", name: "Ибрагимова Луиза ", role: "", description: "Стоматолог - микроскопист ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" },
-            { id: "5", name: "Гайлаев Сулейман  ", role: "", description: "Врач стоматолог - детский ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-zlsd3f6d.jpg" },
-            { id: "6", name: "Ибиев Хасан ", role: "", description: "Стоматолог - терапевт/эндодонтист ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-85eg6mq1.jpg" },
-            { id: "7", name: "Ибрагимова Марет ", role: "", description: "Врач-стоматолог", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779308675600-46soe5n4.jpg" }
+            { id: "1", name: "Яндарханов Малик", role: "Стоматолог-терапевт", description: "Специалист с 10-летним стажем", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
+            { id: "2", name: "Хузаева Селима", role: "Стоматолог-ортодонт", description: "Мастер идеальных улыбок", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
+            { id: "3", name: "Межаев Саид-Селим", role: "Врач общей практики", description: "Эксперт в комплексном лечении", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-pn6xqass.jpg" },
+            { id: "4", name: "Ибрагимова Луиза", role: "Стоматолог-микроскопист", description: "Лечение под увеличением", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-9yjvz0nk.jpg" }
           ]}
         />
       </div>
 
-      <div id="about" data-section="about">
-        <InlineImageSplitTextAbout
-          heading={[
-            { type: "text", content: "Diamond Dent: Совершенство в каждом движении врача по адресу Ул. Шейха Али Митаева, 59" }
-          ]}
-          useInvertedBackground={false}
-          buttons={[
-            { text: "Связаться с нами", href: "http://wa.me/+79291033003" }
-          ]}
-        />
-      </div>
-
-      <div id="features" data-section="features">
-        <FeatureCardOne
-          title="Почему выбирают Diamond Dent"
-          description="Мы используем только сертифицированные материалы и передовое оборудование. Наш адрес: Ул. Шейха Али Митаева, 59"
-          tag="Наши преимущества"
-          tagIcon={Star}
-          textboxLayout="default"
+      <div id="cases" data-section="cases" className="py-12 md:py-20">
+        <FeatureCardOne 
+          title="Наши работы"
+          description="Результаты, которыми мы гордимся. До и после профессионального лечения."
+          tag="Кейсы"
+          tagIcon={Heart}
           animationType="slide-up"
-          gridVariant="uniform-all-items-equal"
+          features={[{ title: "Реставрация", description: "Безупречный результат", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" }]}
+          textboxLayout="default"
           useInvertedBackground={true}
-          features={[
-            {
-              title: "Цифровое планирование",              description: "Моделирование вашей будущей улыбки до начала лечения с помощью компьютерных технологий.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779214792802-z6xibcad.jpg"}
-          ]}
         />
       </div>
 
-      <div id="testimonials" data-section="testimonials">
+      <div id="interior" data-section="interior" className="py-12 md:py-20">
+        <FeatureCardOne 
+          title="Наша клиника"
+          description="Создали пространство, где комфорт сочетается с передовым оборудованием."
+          tag="Интерьер"
+          tagIcon={Camera}
+          animationType="slide-up"
+          features={[{ title: "Зона ожидания", description: "Комфорт с первых минут", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg" }]}
+          textboxLayout="default"
+          useInvertedBackground={false}
+        />
+      </div>
+
+      <div id="about" data-section="about" className="py-12 md:py-20">
+        <InlineImageSplitTextAbout
+          heading={[{ type: "text", content: "Diamond Dent: Совершенство в каждом движении врача" }]}
+        />
+      </div>
+
+      <div id="testimonials" data-section="testimonials" className="py-12 md:py-20">
         <TestimonialCardSix
           title="Отзывы наших пациентов"
-          description="Узнайте, почему пациенты, посещающие нас на Ул. Шейха Али Митаева, 59, доверяют нам самое ценное — свою улыбку."
-          tag="Доверие"
-          textboxLayout="default"
-          useInvertedBackground={false}
+          description="Почему нас выбирают снова и рекомендуют близким."
           animationType="slide-up"
           testimonials={[
-            {
-              id: "1",              name: "Амина И.",              handle: "Пациент",              testimonial: "Лучшая клиника в Грозном. Очень внимательные доктора, безболезненно установили виниры. Теперь улыбаюсь постоянно!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=bqmhs0"
-            },
-            {
-              id: "2",              name: "Магомед А.",              handle: "Пациент",              testimonial: "Проходил имплантацию, всё прошло идеально. Весь процесс разъяснили, цены прозрачные, сервис на уровне московских клиник.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=h1y3jb"
-            },
-            {
-              id: "3",              name: "Седа М.",              handle: "Пациент",              testimonial: "Лечила зубы детям. Врач нашел подход, дети даже не испугались. Рекомендую Diamond Dent всей семьей.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=wkqmwe"
-            }
-          ]}
-          buttons={[
-             { text: "Врачи", onClick: () => document.getElementById('doctors')?.scrollIntoView({ behavior: 'smooth' }) }
+            { id: "1", name: "Амина И.", handle: "Пациент", testimonial: "Лучшая клиника в Грозном, очень внимательные доктора!" },
+            { id: "2", name: "Магомед А.", handle: "Пациент", testimonial: "Имплантация прошла идеально, цены прозрачные." },
+            { id: "3", name: "Седа М.", handle: "Пациент", testimonial: "Детский стоматолог — просто чудо, дети не боятся." }
           ]}
         />
       </div>
 
-      <div id="contact" data-section="contact">
+      <div id="contact" data-section="contact" className="py-12 md:py-20">
         <ContactSplit
           tag="Запись на прием"
-          tagIcon={Mail}
           title="Станьте обладателем безупречной улыбки"
-          description="Оставьте ваши данные, и наш администратор свяжется с вами для выбора удобного времени визита в Diamond Dent по адресу Ул. Шейха Али Митаева, 59."
-          background={{ variant: "plain" }}
-          useInvertedBackground={true}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg"
-          imageAlt="Приемная Diamond Dent"
-          mediaPosition="right"
-          mediaAnimation="slide-up"
-          inputPlaceholder="Ваш номер телефона"
-          buttonText="Записаться"
-          termsText="Отправляя форму, вы соглашаетесь с нашей политикой конфиденциальности."
-          onSubmit={(email) => { window.location.href = 'http://wa.me/+79291033003'; }}
+          description="Оставьте данные для связи с нашим администратором."
+          onSubmit={() => { window.location.href = 'http://wa.me/+79291033003'; }}
         />
       </div>
 
       <div id="footer" data-section="footer">
         <FooterBase
           logoText="Diamond Dent"
-          copyrightText="© 2025 Diamond Dent, Ул. Шейха Али Митаева, 59. Все права защищены."
           columns={[
-            {
-              title: "Услуги",              items: [
-                { label: "Реставрация", href: "#services" },
-                { label: "Имплантация", href: "#services" },
-                { label: "Гигиена", href: "#services" },
-                { label: "Лечение", href: "#services" }
-              ]
-            },
-            {
-              title: "О клинике",              items: [
-                { label: "О нас", href: "#about" },
-                { label: "Врачи", href: "#doctors" },
-                { label: "Отзывы", href: "#testimonials" },
-                { label: "Контакты", href: "#contact" }
-              ]
-            },
-            {
-              title: "Соцсети",              items: [
-                { label: "WhatsApp", href: "http://wa.me/+79291033003" },
-                { label: "Instagram", href: "https://www.instagram.com/diamond_dent_grozny?igsh=MW9scTNkcndjMnR6" }
-              ]
-            }
+            { title: "Услуги", items: [{ label: "Реставрация", href: "#services" }, { label: "Имплантация", href: "#services" }] },
+            { title: "Навигация", items: [{ label: "Врачи", href: "#doctors" }, { label: "Отзывы", href: "#testimonials" }] },
+            { title: "Контакты", items: [{ label: "WhatsApp", href: "http://wa.me/+79291033003" }] }
           ]}
         />
       </div>
