@@ -8,6 +8,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Sparkles, Smile, Star, Users } from 'lucide-react';
 
@@ -158,6 +159,17 @@ export default function DiamondDentPage() {
             {
               id: "3",              name: "Седа М.",              handle: "Пациент",              testimonial: "Лечила зубы детям. Врач нашел подход, дети даже не испугались. Рекомендую Diamond Dent всей семьей.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=wkqmwe"
             }
+          ]}
+        />
+      </div>
+
+      <div id="contact" data-section="contact">
+        <ContactSplitForm
+          title="Свяжитесь с нами"
+          description="Телефон: +79291033003 | Адрес: Ул. Шейха Али Митаева, 59"
+          inputs={[
+              { name: "name", type: "text", placeholder: "Ваше имя" },
+              { name: "phone", type: "tel", placeholder: "Ваш номер телефона" }
           ]}
         />
       </div>
