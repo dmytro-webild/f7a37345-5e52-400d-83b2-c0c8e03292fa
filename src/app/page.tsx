@@ -171,6 +171,7 @@ export default function DiamondDentPage() {
               { name: "name", type: "text", placeholder: "Ваше имя" },
               { name: "phone", type: "tel", placeholder: "Ваш номер телефона" }
           ]}
+          useInvertedBackground={false}
         />
       </div>
 
