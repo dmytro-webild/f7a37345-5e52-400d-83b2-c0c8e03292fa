@@ -49,7 +49,7 @@ export default function DiamondDentPage() {
           tag="Стоматология премиум-класса"
           tagIcon={Sparkles}
           background={{ variant: "glowing-orb" }}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779208184969-49n41xud.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779347445955-xba4vklv.jpg"
           imageAlt="Современная стоматологическая клиника в Грозном"
           imagePosition="right"
           buttons={[
