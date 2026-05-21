@@ -152,7 +152,7 @@ export default function DiamondDentPage() {
           description="Оставьте данные для связи с нашим администратором."
           background={{ variant: "plain" }}
           useInvertedBackground={false}
-          buttons={[{ text: "Записаться", onClick: () => { window.location.href = 'http://wa.me/+79291033003'; } }]}
+          buttons={[{ text: "Записаться", href: 'http://wa.me/+79291033003' }]}
         />
       </div>
 
