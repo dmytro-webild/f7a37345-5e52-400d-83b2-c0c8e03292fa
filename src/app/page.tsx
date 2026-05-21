@@ -69,7 +69,7 @@ export default function DiamondDentPage() {
           gridVariant="three-columns-all-equal-width"
           useInvertedBackground={true}
           products={[
-            { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" },
+            { id: "1", brand: "Эстетика", name: "Виниры и реставрация", price: "от 50000₽", rating: 5, reviewCount: "120+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg?_wi=1" },
             { id: "2", brand: "Хирургия", name: "Дентальная имплантация", price: "от 25,000₽", rating: 5, reviewCount: "85+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211477961-7cu7exxo.jpg" },
             { id: "3", brand: "Лечение", name: "Цифровая диагностика", price: "от 3,000₽", rating: 5, reviewCount: "200+", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211535815-19a28603.jpg" }
           ]}
@@ -103,7 +103,7 @@ export default function DiamondDentPage() {
           tagIcon={Heart}
           animationType="slide-up"
           gridVariant="two-items-per-row"
-          features={[{ title: "Реставрация", description: "Безупречный результат", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" }]}
+          features={[{ title: "Реставрация", description: "Безупречный результат", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg?_wi=2" }]}
           textboxLayout="default"
           useInvertedBackground={true}
         />
