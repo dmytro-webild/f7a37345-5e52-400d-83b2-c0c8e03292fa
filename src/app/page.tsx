@@ -85,6 +85,7 @@ export default function DiamondDentPage() {
           textboxLayout="default"
           animationType="slide-up"
           gridVariant="four-items-2x2-equal-grid"
+          useInvertedBackground={false}
           members={[
             { id: "1", name: "Яндарханов Малик", role: "Стоматолог-терапевт", description: "Специалист с 10-летним стажем", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-aynja8ho.jpg" },
             { id: "2", name: "Хузаева Селима", role: "Стоматолог-ортодонт", description: "Мастер идеальных улыбок", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779225402552-n9uorcya.jpg" },
@@ -101,6 +102,7 @@ export default function DiamondDentPage() {
           tag="Кейсы"
           tagIcon={Heart}
           animationType="slide-up"
+          gridVariant="two-items-per-row"
           features={[{ title: "Реставрация", description: "Безупречный результат", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779211256412-4g0rt4fu.jpg" }]}
           textboxLayout="default"
           useInvertedBackground={true}
@@ -114,6 +116,7 @@ export default function DiamondDentPage() {
           tag="Интерьер"
           tagIcon={Camera}
           animationType="slide-up"
+          gridVariant="two-items-per-row"
           features={[{ title: "Зона ожидания", description: "Комфорт с первых минут", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg" }]}
           textboxLayout="default"
           useInvertedBackground={false}
@@ -123,6 +126,7 @@ export default function DiamondDentPage() {
       <div id="about" data-section="about" className="py-12 md:py-20">
         <InlineImageSplitTextAbout
           heading={[{ type: "text", content: "Diamond Dent: Совершенство в каждом движении врача" }]}
+          useInvertedBackground={false}
         />
       </div>
 
@@ -131,6 +135,8 @@ export default function DiamondDentPage() {
           title="Отзывы наших пациентов"
           description="Почему нас выбирают снова и рекомендуют близким."
           animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
           testimonials={[
             { id: "1", name: "Амина И.", handle: "Пациент", testimonial: "Лучшая клиника в Грозном, очень внимательные доктора!" },
             { id: "2", name: "Магомед А.", handle: "Пациент", testimonial: "Имплантация прошла идеально, цены прозрачные." },
@@ -144,7 +150,9 @@ export default function DiamondDentPage() {
           tag="Запись на прием"
           title="Станьте обладателем безупречной улыбки"
           description="Оставьте данные для связи с нашим администратором."
-          onSubmit={() => { window.location.href = 'http://wa.me/+79291033003'; }}
+          background={{ variant: "plain" }}
+          useInvertedBackground={false}
+          buttons={[{ text: "Записаться", onClick: () => { window.location.href = 'http://wa.me/+79291033003'; } }]}
         />
       </div>
 
