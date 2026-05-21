@@ -8,9 +8,8 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sparkles, Smile, Star, Mail, Users } from 'lucide-react';
+import { Sparkles, Smile, Star, Users } from 'lucide-react';
 
 export default function DiamondDentPage() {
   return (
@@ -160,25 +159,6 @@ export default function DiamondDentPage() {
               id: "3",              name: "Седа М.",              handle: "Пациент",              testimonial: "Лечила зубы детям. Врач нашел подход, дети даже не испугались. Рекомендую Diamond Dent всей семьей.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=wkqmwe"
             }
           ]}
-        />
-      </div>
-
-      <div id="contact" data-section="contact">
-        <ContactSplit
-          tag="Запись на прием"
-          tagIcon={Mail}
-          title="Станьте обладателем безупречной улыбки"
-          description="Оставьте ваши данные, и наш администратор свяжется с вами для выбора удобного времени визита в Diamond Dent по адресу Ул. Шейха Али Митаева, 59."
-          background={{ variant: "plain" }}
-          useInvertedBackground={true}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dw84RnSEOsmbFdYVY2F51sVH09/uploaded-1779314918699-ps9z9ani.jpg"
-          imageAlt="Приемная Diamond Dent"
-          mediaPosition="right"
-          mediaAnimation="slide-up"
-          inputPlaceholder="Ваш номер телефона"
-          buttonText="Записаться"
-          termsText="Отправляя форму, вы соглашаетесь с нашей политикой конфиденциальности."
-          onSubmit={(email) => { window.location.href = 'http://wa.me/+79291033003'; }}
         />
       </div>
 
